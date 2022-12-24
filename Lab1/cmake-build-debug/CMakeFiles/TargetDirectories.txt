@@ -1,3 +1,0 @@
-C:/Users/mghns/Desktop/LAB1_SORT-main/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/mghns/Desktop/LAB1_SORT-main/cmake-build-debug/CMakeFiles/Dima.dir
-C:/Users/mghns/Desktop/LAB1_SORT-main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
