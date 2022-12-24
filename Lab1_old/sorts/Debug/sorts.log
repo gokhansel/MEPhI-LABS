@@ -1,0 +1,15 @@
+﻿  sorts.cpp
+C:\Users\mghns\Desktop\sorts\sorts\sorts.cpp(73,12): warning C4244: 'bağımsız değişken': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
+C:\Users\mghns\Desktop\sorts\sorts\sorts.cpp(100,16): warning C4101: 't': yerel değişken başvurusu kaldırıldı
+C:\Users\mghns\Desktop\sorts\sorts\sorts.cpp(206,26): message : derlenen şablon işlevi 'void bubbleSort<int>(TSequence<int> *,int (__cdecl *)(T,T))' örneği oluşturma başvurusuna bakın
+          with
+          [
+              T=int
+          ]
+C:\Users\mghns\Desktop\sorts\sorts\sorts.cpp(137,7): warning C4101: 't': yerel değişken başvurusu kaldırıldı
+C:\Users\mghns\Desktop\sorts\sorts\sorts.cpp(226,36): message : derlenen şablon işlevi 'void myqsort<int>(TSequence<int> *,int,int,int (__cdecl *)(T,T))' örneği oluşturma başvurusuna bakın
+          with
+          [
+              T=int
+          ]
+  sorts.vcxproj -> C:\Users\mghns\Desktop\sorts\Debug\sorts.exe
