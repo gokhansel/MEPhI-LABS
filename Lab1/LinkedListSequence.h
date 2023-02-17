@@ -57,13 +57,13 @@ public:
         data.print_from_begin();
     }
 
-    void BubbleSort(bool(*cmp)(const T &, const T &)) override {
-        IBubbleSort<T> sort;
+    void QuickSort(bool(*cmp)(const T &, const T &)) override {
+        IQuickSort<T> sort;
         sort.Sort(cmp,this);
     }
 
-    void ShellSort(bool(*cmp)(const T &, const T &)) override {
-        IShellSort<T> sort;
+    void MergeSort(bool(*cmp)(const T &, const T &)) override {
+        IMergeSort<T> sort;
         sort.Sort(cmp, this);
     }
 

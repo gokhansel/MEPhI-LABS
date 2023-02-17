@@ -136,19 +136,24 @@ template <class T> void myqsort( TSequence<T> *arr, int start, int end, int (*cm
 	int i, j;
 	T p, t;
 
-	// Центр
+	//For Linked list need sort qsort and merchsort nlogn
+	//for array toshe samaya
+	//Graphic 
+	//Test
+	//Git pull request 
+	
 	p = arr->v[ (start+end)/2 ];
 	
 	i = start;
 	j = end;
 
-	// Обмениваем относительно центра
+	
 	while (i <= j)
 	{
 		while (cmp( arr->v[i], p ) < 0) i++;
 		while (cmp( arr->v[j], p ) > 0) j--;
 
-		// Меняем при необходимости
+		
 		if ( (i <= j) )
 		{
 			swap( arr->v[i], arr->v[j] );
@@ -156,7 +161,7 @@ template <class T> void myqsort( TSequence<T> *arr, int start, int end, int (*cm
 		}
 	}
 
-	// Вход в рекурсию
+	
 	if (j > start) myqsort( arr, start, j, cmp );
 	if (i < end) myqsort( arr, i, end, cmp );
 }

@@ -13,9 +13,9 @@ public:
 
     virtual T &Get(int index) = 0;
 
-    virtual void BubbleSort(bool(*cmp)(const T &, const T &)) = 0;
+    virtual void QuickSort(bool(*cmp)(const T &, const T &)) = 0;
 
-    virtual void ShellSort(bool(*cmp)(const T &, const T &)) = 0;
+    virtual void MergeSort(bool(*cmp)(const T &, const T &)) = 0;
 
     virtual void BinaryInsertSort(bool(*cmp1)(const T &, const T &),bool(*cmp2)(const T &, const T &)) = 0;
 

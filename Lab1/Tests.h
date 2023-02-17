@@ -76,82 +76,82 @@ void TEST(int sizetest){
     std::cout << std::endl <<std::endl;
 
 
-    std::cout << "Array ShellSort : " << std::endl;
+    std::cout << "Array MergeSort : " << std::endl;
     ArraySequence<int> c(data, sizetest);
     Timer t_7;
-    c.ShellSort(cmp3);
+    c.MergeSort(cmp3);
     std::cout << "Sorting time: " << t_7.elapsed()*1000 << '\n';
     IsOk(&c,cmp1);
     Timer t_8;
-    c.ShellSort(cmp3);
+    c.MergeSort(cmp3);
     std::cout << "sorting time of the sorted data: " << t_8.elapsed()*1000 << '\n';
     IsOk(&c,cmp1);
-    c.ShellSort(cmp2);
+    c.MergeSort(cmp2);
     std::cout << "Test result of sorted data in reverse order: ";
     IsOk(&c,cmp4);
     Timer t_9;
-    c.ShellSort(cmp3);
+    c.MergeSort(cmp3);
     std::cout << "sorting time of the data sorted in reverse order: " << t_9.elapsed()*1000 << '\n';
     IsOk(&c,cmp1);
     std::cout << std::endl <<std::endl;
 
 
-    std::cout << "List ShellSort : " << std::endl;
+    std::cout << "List MergeSort : " << std::endl;
     LinkedListSequence<int> d(data, sizetest);
     Timer t_10;
-    d.ShellSort(cmp3);
+    d.MergeSort(cmp3);
     std::cout << "Sorting time: " << t_10.elapsed()* 1000<< '\n';
     IsOk(&d,cmp1);
     Timer t_11;
-    d.ShellSort(cmp3);
+    d.MergeSort(cmp3);
     std::cout << "sorting time of the sorted data: " << t_11.elapsed() * 1000 << '\n';
     IsOk(&d,cmp1);
-    d.ShellSort(cmp2);
+    d.MergeSort(cmp2);
     std::cout << "Test result of sorted data in reverse order: ";
     IsOk(&d,cmp4);
     Timer t_12;
-    d.ShellSort(cmp3);
+    d.MergeSort(cmp3);
     std::cout << "sorting time of the data sorted in reverse order: " << t_12.elapsed() *1000<< '\n';
     IsOk(&d,cmp1);
     std::cout << std::endl <<std::endl;
 
 
-    std::cout << "Array BubbleSort : " << std::endl;
+    std::cout << "Array QuickSort : " << std::endl;
     ArraySequence<int> e(data, sizetest);
     Timer t_13;
-    e.BubbleSort(cmp2);
+    e.QuickSort(cmp2);
     std::cout << "Sorting time: " << t_13.elapsed() *1000<< '\n';
     IsOk(&e,cmp1);
     Timer t_14;
-    e.BubbleSort(cmp2);
+    e.QuickSort(cmp2);
     std::cout << "sorting time of the sorted data: " << t_14.elapsed() *1000<< '\n';
     IsOk(&e,cmp1);
-    e.BubbleSort(cmp3);
+    e.QuickSort(cmp3);
     std::cout << "Test result of sorted data in reverse order: ";
     IsOk(&e,cmp4);
     Timer t_15;
-    e.BubbleSort(cmp2);
+    e.QuickSort(cmp2);
     std::cout << "sorting time of the data sorted in reverse order: " << t_15.elapsed()*1000 << '\n';
     IsOk(&e,cmp1);
     std::cout << std::endl <<std::endl;
 
 
 
-    std::cout << "List BubbleSort : " << std::endl;
+    std::cout << "List QuickSort : " << std::endl;
     LinkedListSequence<int> f(data, sizetest);
     Timer t_17;
-    f.BubbleSort(cmp2);
+    f.QuickSort(cmp2);
     std::cout << "Sorting time: " << t_17.elapsed()*1000 << '\n';
     IsOk(&f,cmp1);
     Timer t_18;
-    f.BubbleSort(cmp2);
+    f.QuickSort(cmp2);
     std::cout << "sorting time of the sorted data: " << t_18.elapsed()*1000 << '\n';
     IsOk(&f,cmp1);
-    f.BubbleSort(cmp3);
+    f.QuickSort(cmp3);
     std::cout << "Test result of sorted data in reverse order: ";
     IsOk(&f,cmp4);
     Timer t_19;
-    f.BubbleSort(cmp2);
+    f.QuickSort(cmp2);
     std::cout << "sorting time of the data sorted in reverse order: " << t_19.elapsed()*1000 << '\n';
     IsOk(&f,cmp1);
     std::cout << std::endl <<std::endl;

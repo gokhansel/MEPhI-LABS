@@ -67,7 +67,7 @@ int main() {
                 seq->Print();
                 int s5 = 0;
                 while (s5 < 1 || s5 > 5) {
-                    std::cout << std::endl << "Select the sort algorithm:" << std::endl << "1 - BinaryInsertSort" << std::endl << "2 - ShellSort" << std::endl << "3 - BubbleSort" << std::endl;
+                    std::cout << std::endl << "Select the sort algorithm:" << std::endl << "1 - BinaryInsertSort" << std::endl << "2 - MergeSort" << std::endl << "3 - QuickSort" << std::endl;
                     std::cin >> s5;
                     switch (s5) {
                         case 1: {
@@ -76,12 +76,12 @@ int main() {
                             break;
                         }
                         case 2: {
-                            seq->ShellSort(cmp3);
+                            seq->MergeSort(cmp3);
                             seq->Print();
                             break;
                         }
                         case 3: {
-                            seq->BubbleSort(cmp2);
+                            seq->QuickSort(cmp2);
                             seq->Print();
                             break;
                         }
